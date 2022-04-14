@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Blackjack</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Blackjack</h1>
+            <p id="message-el">Want to play a round?</p>
+            <p id="cards-el">Cards:</p>
+            <p id="sum-el">Sum:</p>
+            <button id="start-game" onclick="startGame()" disabled>START GAME</button>
+            <button id="new-card" onclick="newCard()" disabled>NEW CARD</button>
+            <p id="player-el"></p>
+            <p>Select your bid: <span id="bid">not selected</span></p>
+            <button id="1" class = "select-bid" onclick="placeBid(this.id)">1$</button>
+            <button id="2" class = "select-bid" onclick="placeBid(this.id)">5$</button>
+            <button id="3" class = "select-bid" onclick="placeBid(this.id)">10$</button>
+    </div>
+        <script src="main.js"></script>
+</body>
+</html>
